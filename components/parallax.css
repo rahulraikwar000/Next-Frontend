@@ -1,0 +1,66 @@
+.parallax-root {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fixed-left {
+    width: 35%;
+    background-color: black;
+    color: white;
+    padding: 4rem 2rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 10;
+}
+
+.scrollable-right {
+    margin-left: 35%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    width: 65%;
+}
+
+.image-section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.scroll-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title-box {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.title-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+
+.left-outer {
+    width: 51%;
+}
